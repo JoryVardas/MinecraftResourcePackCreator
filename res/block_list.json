@@ -1,0 +1,76 @@
+[
+  {
+    "name": "Wood",
+    "subgroups": [
+      {
+        "name": "Acacia",
+        "blocks": [
+          "acacia_button",
+          "acacia_door",
+          "acacia_fence_gate",
+          "acacia_fence",
+          "acacia_planks",
+          "acacia_pressure_plate",
+          "acacia_sign",
+          "acacia_slab",
+          "acacia_stairs",
+          "acacia_trapdoor",
+          "acacia_wall_sign"
+        ],
+        "subgroups": [
+          {
+            "name": "tree",
+            "blocks": [
+              "acacia_leaves",
+              "acacia_log",
+              "acacia_sapling",
+              "acacia_wood"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Andersite",
+    "blocks": [
+      "andersite",
+      "andersite_slab",
+      "andersite_stairs",
+      "andersite_wall"
+    ]
+  },
+  {
+    "name": "Workstations",
+    "blocks": [
+
+    ],
+    "subgroups": [
+      {
+        "name": "Anvil",
+        "blocks": [
+          "anvil"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Misc.",
+    "blocks": [
+      "air",
+      "ancient_debris"
+    ]
+  },
+  {
+    "name": "Flower",
+    "blocks": [
+      "allium"
+    ]
+  },
+  {
+    "name": "Rail",
+    "blocks": [
+      "activator_rail"
+    ]
+  }
+]
