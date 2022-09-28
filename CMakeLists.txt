@@ -64,3 +64,19 @@ include_directories(${NANOGUI_EXTRA_INCS})
 # Lastly, additional libraries may have been built for you.  In addition to linking
 # against NanoGUI, we need to link against those as well.
 target_link_libraries(MinecraftResourcePackCreator nanogui ${NANOGUI_EXTRA_LIBS})
+
+# Get external libraries
+include(FetchContent)
+FetchContent_Declare(
+        nlohmann_json
+        URL      https://raw.githubusercontent.com/nlohmann/json/develop/single_include/nlohmann/json.hpp
+        DOWNLOAD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/ext/nlohmann/
+        DOWNLOAD_NO_EXTRACT TRUE
+)
+FetchContent_Declare(
+        nothings_stb_image
+        URL      https://raw.githubusercontent.com/nothings/stb/master/stb_image.h
+        DOWNLOAD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/ext/nothings/
+        DOWNLOAD_NO_EXTRACT TRUE
+)
+FetchContent_MakeAvailable(nlohmann_json nothings_stb_image)
